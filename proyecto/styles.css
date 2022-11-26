@@ -1,0 +1,627 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1, 5em;
+	min-height: 100vh;
+}
+
+/* Estilos generales */
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Menú Principal */
+
+.header {
+	background-color: salmon;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+.contenedor-nav {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 100%;
+}
+
+.menu-header .contenedor-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.contenedor-nav img {
+	max-height: 50px;
+}
+
+.menu-derecha {
+	display: flex;
+	justify-content: center;
+}
+
+.menu-derecha .liheader {
+	margin-right: 15px;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.menu-derecha .header-links {
+	color: var(--text-color);
+	padding: 5px 5px;
+	line-height: 1em;
+}
+
+/* Menú Principal: Media Queries */
+
+
+@media (max-width: 767px) {
+	.nav-logo {
+		margin-bottom: 5px;
+	}
+}
+
+@media (min-width: 760px) {
+	.header {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.menu-header .contenedor-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contenedor-nav img {
+		max-height: 54px;
+	}
+}
+
+@media (max-width: 760px) {
+	.contenedor-nav img {
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 576px) {
+	.contenedor-nav {
+		max-width: 640px;
+	}
+}
+
+@media (min-width: 900px) {
+	.contenedor-nav {
+		max-width: 1140px;
+	}
+}
+
+/* Footer */
+
+.bibliografia-footer {
+	position: fixed;
+}
+
+footer {
+	padding: 20px 90px 20px 90px;
+	margin-top: 30px;
+	color: white;
+	width: 100%;
+	background-color: rgb(29, 29, 29);
+	padding: 30px;
+	position: relative;
+	bottom: 0;
+}
+
+
+.footer-superior-padre p {
+	font-weight: 600;
+}
+
+footer hr {
+	border-bottom: 4px solid #fff 100%;
+}
+
+.footer-superior-padre,
+.footer-extra {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 10px 0px 10px 0px;
+}
+
+.footer-menu {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+.footer-menu li {
+	margin-right: 10px;
+}
+
+.footer-inferior {
+	margin: 20px 0px 10px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+@media (min-width: 768px) {
+	.footer-top p {
+		max-width: 300px;
+		margin-bottom: 0;
+	}
+
+	.footer-superior-padre,
+	.footer-extra {
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.footer-menu li {
+		margin-left: 15px;
+		margin-right: 0;
+	}
+}
+
+/* PÁGINA PRINCIPAL */
+/* Acceso a biografía */
+
+.h1-portada {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: #005F6B;
+}
+
+.presentacion-portada {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 300px 0px 300px;
+}
+
+.p-presentacion {
+	text-align: justify;
+	font-weight: 300;
+	padding-bottom: 10px;
+	line-height: 20px;
+}
+
+.presentacion-portada img {
+	max-width: 300px;
+	padding: 10px 10px 10px 50px;
+}
+
+/* Acceso a biografía Mobile */
+
+@media (max-width: 1300px) {
+	.presentacion-portada {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.p-presentacion {
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 1000px) {
+	.presentacion-portada {
+		padding: 0px 200px 0px 200px;
+	}
+
+}
+
+@media (max-width: 900px) {
+	.presentacion-portada {
+		padding: 0px 100px 0px 100px;
+	}
+
+}
+
+/* Bloque Cifras Home */
+
+.cifrash2 {
+	text-align: center;
+	padding: 40px 0px 20px 0px;
+}
+
+.cifrasHomePadre {
+	background-color: #005F6B;
+	height: 300px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.cifrasHomePadre h3 {
+	margin: 10px 0px 10px 0px;
+}
+
+.cifrasHomeInterior {
+	padding: 0px 50px 0px 50px;
+	text-align: justify;
+	text-align: center;
+}
+
+.cifrasHomeFoto {
+	border-radius: 50%;
+	max-height: 100px;
+}
+
+/* Bloque Cifras Home Mobile */
+
+@media (max-width: 1300px) {
+	.cifrasHomeInterior {
+		padding: 0px 20px 0px 20px;
+		text-align: justify;
+		text-align: center;
+	}
+
+	.cifrasHomePadre {
+		height: 400px;
+	}
+
+}
+
+/* Bloque artículo destacado home */
+
+.inventoHomeh2 {
+	margin: 10px 0px 10px 0px;
+}
+
+.invento-portada {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 300px 0px 300px;
+	text-align: center;
+}
+
+.invento-portada img {
+	max-width: 600px;
+	margin: 0px 100px 40px 100px;
+}
+
+.contenedor-invento {
+	width: 500px;
+}
+
+/* Bloque artículo destacado home Mobile */
+
+@media (max-width: 1600px) {
+	.invento-portada {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 50px;
+	}
+}
+
+/* Saber más */
+
+.saberMas-Home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	max-height: 200px;
+	background-color: #005f6b23;
+	padding: 30px;
+}
+
+.saberMas-Home h4 {
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.buttonhome {
+	background-color: #005F6B;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	margin: 10px 0px 30px 0px;
+	cursor: pointer;
+	border: none;
+	border-radius: 12px;
+}
+
+/* ENLACES */
+
+.link-padre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.links ul li {
+	padding: 4px;
+}
+
+.logos-bibliografía {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.logos-bibliografía img {
+	max-width: 100px;
+	padding: 0px 20px 0px 20px;
+}
+
+.fuentes-destacadas {
+	margin: 40px 0px 40px 0px;
+}
+
+.p-presentacion-links {
+	margin-top: 30px;
+}
+
+/* CATEGORÍA - INVENTOS - BIOGRAFÍA */
+
+td {
+	background-color: #E8D5B7;
+	color: #005F6B;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.eventos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.relacionados-padre {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 40px;
+
+}
+
+.articulos-relacionados {
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+	max-width: 350px;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	margin: 10px 20px 10px 20px;
+	transition: 0.5s;
+}
+
+.articulos-relacionados img {
+	max-width: 350px;
+}
+
+.articulos-relacionados:hover {
+	box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-preview-articulo {
+	padding: 2px 16px;
+}
+
+/* CATEGORÍA - MOBILE */
+
+@media (max-width: 1600px) {
+	.relacionados-padre {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+}
+
+/* PRESENTACIÓN */
+
+.presentacion-padre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	margin: 10px 150px 10px 150px;
+}
+
+.imgbio {
+	margin: 20px 0px 20px 0px;
+}
+
+em {
+	margin-bottom: 12px;
+}
+
+.biovideo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0px 20px 0px;
+
+}
+
+/* PRESENTACIÓN - MOBILE */
+
+@media (max-width: 1600px) {
+	.presentacion-padre {
+		margin: 10px 100px 10px 100px;
+	}
+
+	.presentacion-padre img {
+		max-width: 600px;
+	}
+}
+
+/* DETALLE */
+
+.hero-fondo {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("img/ornitoptero-ficha.jpg");
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+}
+
+.hero-fondo p {
+	margin: 10px 120px 10px 120px;
+}
+
+.hero-fondo a {
+	text-decoration: underline;
+	font-weight: 600;
+}
+
+.ficha-padre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.ficha-invento {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #005F6B;
+	padding: 30px;
+	color: white;
+	max-width: 400px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.datos-ficha {
+	padding: 5px 0px 5px 0px;
+}
+
+.ficha-invento img {
+	max-width: 300px;
+	padding: 20px 0px 20px 0px;
+}
+
+.buttonficha {
+	background-color: #ffffff;
+	color: #005F6B;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	margin: 10px 0px 10px 0px;
+	cursor: pointer;
+	border: none;
+	border-radius: 12px;
+}
+
+.ficha-p {
+	margin: 10px 120px 10px 120px;
+	text-align: justify;
+}
+
+.ficha-imagenes {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.ficha-imagenes img {
+	margin: 10px 20px 10px 20px;
+	max-height: 300px;
+}
+
+.saberMas-Detalle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-height: 200px;
+	background-color: #005f6b23;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+.saberMas-Detalle li {
+	display: inline;
+	font-weight: 600;
+	color: #005F6B;
+}
+
+.saberMas-Detalle h4 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+/* DETALLE - MOBILE */
+
+@media (max-width: 1800px) {
+
+	.ficha-imagenes {
+		margin: 10px 10px 10px 10px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.ficha-p {
+		margin: 10px 100px 10px 100px;
+		text-align: justify;
+	}
+
+	.ficha-imagenes {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* EFECTOS VISUALES */
+
+a:hover {
+	color: #005F6B;
+}
+
+button:hover {
+	box-shadow: 2px 3px #005f6b28;
+}
+
+.menu-derecha li a:hover {
+	color: #005F6B;
+}
+
+.header-links-active{
+    text-decoration: underline;
+}

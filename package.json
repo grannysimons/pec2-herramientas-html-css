@@ -1,0 +1,26 @@
+{
+  "name": "pec1_dbc",
+  "browserslist": "> 0.5%, since 2015-03, not dead",
+  "source": [
+    "proyecto/portada.html"
+  ],
+  "version": "1.0.0",
+  "description": "Práctica dedicada al maestro Leonardo Da Vinci y los inventos que realizó en su vida",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Daniel Benito <dbcarrillo@uoc.edu>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  },
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "browser-image-compression": "^2.0.0",
+    "i": "^0.3.7",
+    "npm": "^9.1.2",
+    "or": "^0.2.0"
+  }
+}
