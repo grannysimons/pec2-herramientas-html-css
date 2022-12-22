@@ -5,7 +5,7 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1, 5em;
+	line-height: 1.5em;
 	min-height: 100vh;
 }
 
@@ -136,7 +136,7 @@ footer {
 }
 
 footer hr {
-	border-bottom: 4px solid #fff 100%;
+	border-bottom: 2px solid #ffffff ;
 }
 
 .footer-superior-padre,
@@ -342,6 +342,19 @@ footer hr {
 }
 
 .buttonhome {
+	background-color: #005F6B;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	margin: 10px 0px 30px 0px;
+	cursor: pointer;
+	border: none;
+	border-radius: 12px;
+}
+
+.buttonhomeinteractivo {
 	background-color: #005F6B;
 	color: white;
 	padding: 10px 20px;
@@ -617,6 +630,13 @@ a:hover {
 button:hover {
 	box-shadow: 2px 3px #005f6b28;
 }
+.buttonhomeinteractivo a:hover {
+	color: white;
+}
+
+.buttonhomeinteractivo:hover {
+	color: white;
+}
 
 .menu-derecha li a:hover {
 	color: #005F6B;
@@ -625,3 +645,95 @@ button:hover {
 .header-links-active{
     text-decoration: underline;
 }
+
+/* PEC 2 */
+/* Portada: clip-path */
+.clip-portadauno {
+	clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+.clip-portadados {
+	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+
+.ficha-padre-link {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.ficha-invento-link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #005F6B;
+	padding: 20px;
+	color: white;
+	max-width: 400px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.ficha-invento-link img {
+	max-width: 200px;
+	padding: 10px 0px 10px 0px;
+}
+
+/* Animación SVG */
+
+.animacion-padre{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+	animation-duration: 2s;
+  	animation-name: bounceIn;
+}
+.animacion-padre img{
+	max-width: 500px;
+}
+
+@keyframes bounceIn {
+	0% {
+	  transform: scale(0.3);
+	  opacity: 0;
+	}
+	50% {
+	  transform: scale(1.4);
+	  opacity: 1;
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+
+  /* Presentación: clip-path */
+ 
+
+  .imgbioclip{
+	margin: 20px 0px 20px 0px;
+	clip-path: polygon(0 0, 100% 0%, 90% 100%, 8% 100%);
+  }
+
+  /* Transición Botón CSS */ 
+
+  .buttonfichaanimado {
+	background-color: #ffffff;
+	transition: background-color 0.5s ease-out;
+	color: #005F6B;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	margin: 10px 0px 10px 0px;
+	cursor: pointer;
+	border: none;
+	border-radius: 12px;
+}
+
+  .buttonfichaanimado:hover {
+	background-color: #00e1ff;
+  }

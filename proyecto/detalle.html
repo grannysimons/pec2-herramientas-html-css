@@ -8,14 +8,20 @@
       <meta name="description"
          content="Aprende más sobre el Ornitóptero, uno de los inventos más curiosos de Leonardo Da Vinci">
       <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="img/favicon.ico" type="image/x-icon">
       <script src="script.js"></script>
    </head>
    <body>
       <header>
          <nav class="menu-header">
              <div class="contenedor-nav">
-                 <a class="logo" href="portada.html" title="Logo principal">
-                     <img src="img/logo.png" alt="Logo Principal"/>
+                 <a class="logo" href="index.html" title="Logo principal">
+                    <picture>
+                        <source type="img/webp" srcset="img/logow.webp">
+                        <source type="img/png" srcset="img/logo.png">
+                        <img src="img/logow.webp" alt="Logo">
+                     </picture>
                  </a>
                  <ul class="menu-derecha">
                      <li class="liheader">
@@ -38,10 +44,10 @@
         <!-- Hero - Invento -->
         <div class="hero-fondo">
             <div class="hero-texto">
-              <h1>El Ornitóptero</h1>
-              <p><a  id="inventosjs" ref="categorias.html">Inventos de Leonardo Da Vinci</a></p>
+              <h2>El Ornitóptero</h2>
+              <p><a  id="inventosjs" href="categorias.html">Inventos de Leonardo Da Vinci</a></p>
               <p>Un ornitóptero (del griego «ornitos», pájaro y «pteron», ala) es un aerodino que obtiene el empuje necesario del movimiento batiente de sus alas de forma análoga a como lo hacen las aves.</p>
-              <button type="button" class="buttonficha" onclick="inventos()" >¿Dónde hay más inventos?</button>
+              <button type="button" class="buttonfichaanimado" onclick="inventos()" >¿Dónde hay más inventos?</button>
             </div>
         </div>
 
@@ -50,16 +56,22 @@
          <div class="ficha-padre">
             <div class="ficha-invento">
                <h2>Ornitóptero</h2>
-               <img src="img/ornitoptero-ficha.jpg" alt="Onitóptero">
+               <!-- IMÁGEN PRINCIPAL RESPONSIVE: Resolution switching (tamaño) -->
+               <picture>
+                <source media="(min-width: 800px)" srcset="img/ornitoptero-ficha.jpg">
+                <source media="(max-width: 800px)" srcset="img/ornitoptero-ficha-art.jpg">
+                <img src="img/ornitoptero-ficha.jpg" alt="Onitóptero"
+                srcset="img/ornitoptero-ficha.jpg 300w, img/ornitoptero-ficha-200.jpg 480w"
+                sizes="(max-width: 600px) 300px, 480px">
                <p class="datos-ficha"><strong>Inventor:</strong> Leonardo Da Vinci</p>
-               <p>
                   <strong>Fecha:</strong>
-                  <datetime>1485</datetime>
-               </p>
+                  <p>1485</p>
+                
                <p class="datos-ficha"><strong>Tipo:</strong> Aerodino con motor</p>
-               <a href="https://www.youtube.com/watch?v=opGjGpsCJtY" target="_blank">
-               <button class="buttonficha">Vídeo funcionamiento</button>
-               </a>
+               <br>
+               
+            <a class="buttonficha" href="https://www.youtube.com/watch?v=opGjGpsCJtY" target="_blank">Vídeo funcionamiento</a>
+               
             </div>
          </div>
          
@@ -76,16 +88,28 @@
    </p>
 <!-- Imágenes -->
    <div class="ficha-imagenes">
-      <img src="img/ornitoptero-1.png" alt="Ornitóptero">
-      <img src="img/ornitoptero-2.png" alt="Ornitóptero dos">
-      <img src="img/ornitoptero-3.png" alt="Ornitóptero tres">
+    <picture>
+        <source type="img/avif" srcset="img/ornitoptero-1-avif.avif">
+        <source type="img/png" srcset="img/ornitoptero-1.png">
+        <img src="img/ornitoptero-1-avif.avif" alt="Ornitóptero">
+     </picture>
+     <picture>
+        <source type="img/webp" srcset="img/ornitoptero-2-webp.webp">
+        <source type="img/png" srcset="img/ornitoptero-2.png">
+        <img src="img/ornitoptero-2-webp.webp" alt="Ornitóptero">
+     </picture>
+     <picture>
+        <source type="img/webp" srcset="img/ornitoptero-3-webp.webp">
+        <source type="img/png" srcset="img/ornitoptero-3.png">
+        <img src="img/ornitoptero-3-webp.webp" alt="Ornitóptero">
+     </picture>
    </div>
 <!-- Listado -->
 
 <div class="saberMas-Detalle">
    <h4>¿Quieres saber más?</h4>
    <ul>
-      <li><a href="portada.html">Portada</a></li>
+      <li><a href="index.html">Portada</a></li>
       <li><a href="presentacion.html">Ficha</a></li>
       <li><a href="categorias.html">Categoría</a></li>
      </ul>
@@ -97,12 +121,16 @@
         
          <div class="contenedor-nav">
              <div class="footer-superior-padre">
-                 <p>Leonardo Da Vinci</p>
+                <picture>
+                    <source type="img/webp" srcset="img/logofooterw.webp">
+                    <source type="img/png" srcset="img/logofooter.png">
+                    <img src="img/logofooterw.webp" alt="Logo Footer">
+                 </picture>
                  <div class="footer-extra">
                      <p>Descubre más en:</p>
      
                      <ul class="footer-menu">
-                         <li><a href="https://es.wikipedia.org/wiki/Leonardo_da_Vinci"target="_blank" title="Infobae">Wikipedia</a></li>
+                         <li><a href="https://es.wikipedia.org/wiki/Leonardo_da_Vinci" target="_blank" title="Infobae">Wikipedia</a></li>
                          <li><a href="https://www.infobae.com/tendencias/2019/04/30/los-10-inventos-mas-geniales-de-leonardo-da-vinci/" target="_blank" title="Infobae">Infobae</a></li>
                          <li><a href="https://www.muyinteresante.es/cultura/arte-cultura/especiales/todo-sobre-leonardo-da-vinci" target="_blank" title="Muy Interesante">Muy Interesante</a></li>
                      </ul>

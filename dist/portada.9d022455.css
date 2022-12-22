@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1, 5em;
+  min-height: 100vh;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  z-index: 10;
+  background-color: salmon;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+}
+
+.contenedor-nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu-header .contenedor-nav {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+}
+
+.contenedor-nav img {
+  max-height: 50px;
+}
+
+.menu-derecha {
+  justify-content: center;
+  display: flex;
+}
+
+.menu-derecha .liheader {
+  margin-right: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.menu-derecha .header-links {
+  color: var(--text-color);
+  padding: 5px;
+  line-height: 1em;
+}
+
+@media (max-width: 767px) {
+  .nav-logo {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 760px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .menu-header .contenedor-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .contenedor-nav img {
+    max-height: 54px;
+  }
+}
+
+@media (max-width: 760px) {
+  .contenedor-nav img {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .contenedor-nav {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 900px) {
+  .contenedor-nav {
+    max-width: 1140px;
+  }
+}
+
+.bibliografia-footer {
+  position: fixed;
+}
+
+footer {
+  color: #fff;
+  width: 100%;
+  background-color: #1d1d1d;
+  margin-top: 30px;
+  padding: 30px;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-superior-padre p {
+  font-weight: 600;
+}
+
+footer hr {
+  border-bottom: 4px solid #fff 100%;
+}
+
+.footer-superior-padre, .footer-extra {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  display: flex;
+}
+
+.footer-menu {
+  align-items: center;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.footer-menu li {
+  margin-right: 10px;
+}
+
+.footer-inferior {
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0 10px;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .footer-top p {
+    max-width: 300px;
+    margin-bottom: 0;
+  }
+
+  .footer-superior-padre, .footer-extra {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-menu li {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+}
+
+.h1-portada {
+  text-align: center;
+  color: #005f6b;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.presentacion-portada {
+  flex-direction: row;
+  align-items: center;
+  padding: 0 300px;
+  display: flex;
+}
+
+.p-presentacion {
+  text-align: justify;
+  padding-bottom: 10px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.presentacion-portada img {
+  max-width: 300px;
+  padding: 10px 10px 10px 50px;
+}
+
+@media (max-width: 1300px) {
+  .presentacion-portada {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .p-presentacion {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .presentacion-portada {
+    padding: 0 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .presentacion-portada {
+    padding: 0 100px;
+  }
+}
+
+.cifrash2 {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.cifrasHomePadre {
+  height: 300px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #005f6b;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.cifrasHomePadre h3 {
+  margin: 10px 0;
+}
+
+.cifrasHomeInterior {
+  text-align: justify;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.cifrasHomeFoto {
+  max-height: 100px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1300px) {
+  .cifrasHomeInterior {
+    text-align: justify;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .cifrasHomePadre {
+    height: 400px;
+  }
+}
+
+.inventoHomeh2 {
+  margin: 10px 0;
+}
+
+.invento-portada {
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 300px;
+  display: flex;
+}
+
+.invento-portada img {
+  max-width: 600px;
+  margin: 0 100px 40px;
+}
+
+.contenedor-invento {
+  width: 500px;
+}
+
+@media (max-width: 1600px) {
+  .invento-portada {
+    flex-direction: column;
+    padding-bottom: 50px;
+    display: flex;
+  }
+}
+
+.saberMas-Home {
+  max-height: 200px;
+  background-color: #005f6b23;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  display: flex;
+}
+
+.saberMas-Home h4 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.buttonhome {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-color: #005f6b;
+  border: none;
+  border-radius: 12px;
+  margin: 10px 0 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.link-padre {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.links ul li {
+  padding: 4px;
+}
+
+.logos-bibliografía {
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+}
+
+.logos-bibliografía img {
+  max-width: 100px;
+  padding: 0 20px;
+}
+
+.fuentes-destacadas {
+  margin: 40px 0;
+}
+
+.p-presentacion-links {
+  margin-top: 30px;
+}
+
+td {
+  color: #005f6b;
+  text-align: center;
+  background-color: #e8d5b7;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.eventos {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.relacionados-padre {
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.articulos-relacionados {
+  max-width: 350px;
+  text-align: center;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  transition: all .5s;
+  box-shadow: 0 3px 6px #0003;
+}
+
+.articulos-relacionados img {
+  max-width: 350px;
+}
+
+.articulos-relacionados:hover {
+  box-shadow: 0 10px 18px #00000080;
+}
+
+.contenedor-preview-articulo {
+  padding: 2px 16px;
+}
+
+@media (max-width: 1600px) {
+  .relacionados-padre {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    display: flex;
+  }
+}
+
+.presentacion-padre {
+  text-align: justify;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 150px;
+  display: flex;
+}
+
+.imgbio {
+  margin: 20px 0;
+}
+
+em {
+  margin-bottom: 12px;
+}
+
+.biovideo {
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  display: flex;
+}
+
+@media (max-width: 1600px) {
+  .presentacion-padre {
+    margin: 10px 100px;
+  }
+
+  .presentacion-padre img {
+    max-width: 600px;
+  }
+}
+
+.hero-fondo {
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  text-align: center;
+  background-image: linear-gradient(#00000080, #000000b3), url("ornitoptero-ficha.744a68c5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.hero-fondo p {
+  margin: 10px 120px;
+}
+
+.hero-fondo a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.ficha-padre {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ficha-invento {
+  text-align: center;
+  color: #fff;
+  max-width: 400px;
+  background-color: #005f6b;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 30px;
+  display: flex;
+}
+
+.datos-ficha {
+  padding: 5px 0;
+}
+
+.ficha-invento img {
+  max-width: 300px;
+  padding: 20px 0;
+}
+
+.buttonficha {
+  color: #005f6b;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.ficha-p {
+  text-align: justify;
+  margin: 10px 120px;
+}
+
+.ficha-imagenes {
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+}
+
+.ficha-imagenes img {
+  max-height: 300px;
+  margin: 10px 20px;
+}
+
+.saberMas-Detalle {
+  max-height: 200px;
+  background-color: #005f6b23;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 30px;
+  display: flex;
+}
+
+.saberMas-Detalle li {
+  color: #005f6b;
+  font-weight: 600;
+  display: inline;
+}
+
+.saberMas-Detalle h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+@media (max-width: 1800px) {
+  .ficha-imagenes {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .ficha-p {
+    text-align: justify;
+    margin: 10px 100px;
+  }
+
+  .ficha-imagenes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+a:hover {
+  color: #005f6b;
+}
+
+button:hover {
+  box-shadow: 2px 3px #005f6b28;
+}
+
+.menu-derecha li a:hover {
+  color: #005f6b;
+}
+
+.header-links-active {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=portada.9d022455.css.map */

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portada - Leonardo da Vinci</title>
+      <meta name="description"
+         content="Página dedicada al polímata florentino Leonardo da Vinci, que con sus inventos, estudios y escritos, dejó un legado que perdura hasta nuestos días">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+   </head>
+   <body>
+      <header>
+         <nav class="menu-header">
+            <div class="contenedor-nav">
+               <a class="logo" href="index.html" title="Logo principal">
+                  <picture>
+                     <source type="img/webp" srcset="img/logow.webp">
+                     <source type="img/png" srcset="img/logo.png">
+                     <img src="img/logow.webp" alt="Logo">
+                  </picture>
+               </a>
+               <ul class="menu-derecha">
+                  <li class="liheader">
+                     <a class="header-links" href="categorias.html">Categoría</a>
+                  </li>
+                  <li class="liheader">
+                     <a class="header-links" href="presentacion.html">Ficha</a>
+                  </li>
+                  <li class="liheader">
+                     <a class="header-links" href="detalle.html">Destacado</a>
+                  </li>
+                  <li class="liheader">
+                     <a class="header-links" href="bibliografia.html">Bibliografia</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <!-- Bloque inicial - Presentación -->
+         <h1 class="h1-portada">Leonardo Da Vinci · Web-Homenaje</h1>
+         <div class="presentacion-portada">
+            <div>
+               <h2 class="p-presentacion">Mini-Biografía</h2>
+               <p class="p-presentacion"><strong>Leonardo da Vinci</strong> (<em>Leonardo di ser Piero da Vinci</em>) (<em>Vinci, 15 de abril de 1452​-Amboise, 2 de mayo de 1519</em>) fue un polímata florentino del Renacimiento italiano. Fue <strong>a la vez</strong> pintor, anatomista, arquitecto, paleontólogo,​botánico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista. Murió acompañado de Francesco Melzi,​ a quien legó sus proyectos, diseños y pinturas. Tras pasar su infancia en su ciudad natal, Leonardo estudió con el pintor florentino <strong>Andrea de Verrocchio</strong>. Sus primeros trabajos de importancia fueron creados en Milán al servicio del duque Ludovico Sforza. Trabajó a continuación en Roma, Bolonia y Venecia, y pasó sus últimos años en Francia, por invitación del rey Francisco I.</p>
+               
+               <button class="buttonhomeinteractivo" onclick="javascript:alert('Volando en Ornitóptero a la información ✈︎');"><a href="detalle.html">Saber más</a></button>
+               
+            </div>
+            <img class="clip-portadauno" srcset="img/leonardo1x.png 1x,  
+            img/leonardo2x.png 2x" src="img/leonardo1x.png" alt="leonardo da vinci">
+         </div>
+         <!-- Cifras -->
+         <h2 class="cifrash2">Da Vinci aportó en numerosas disciplinas</h2>
+         <div class="cifrasHomePadre">
+            <div class="cifrasHomeInterior">
+               <picture>
+                  <source type="img/webp" srcset="img/anatomiaw.webp">
+                  <source type="img/jpg" srcset="img/anatomia.jpg">
+                  <img class="cifrasHomeFoto" src="img/anatomiaw.webp" alt="anatomia">
+               </picture>
+        
+                  <h3>Anatomía humana</h3>
+            
+               <p>Disecaba cuerpos humanos, con el objetivo de llegar al que llamaba verdadero conocimiento</p>
+            </div>
+            <div class="cifrasHomeInterior">
+               <picture>
+                  <source type="img/webp" srcset="img/botanicaw.webp">
+                  <source type="img/jpg" srcset="img/botanica.jpg">
+                  <img class="cifrasHomeFoto" src="img/anatomiaw.webp" alt="botanica">
+               </picture>
+               
+                  <h3>Botánica</h3>
+               
+               <p>Realizaba estudios de la anatomía vegetal siendo buena prueba de ello sus dibujos</p>
+            </div>
+            <div class="cifrasHomeInterior">
+               <picture>
+                  <source type="img/webp" srcset="img/hidrologiaw.webp">
+                  <source type="img/jpg" srcset="img/hidrologia.jpg">
+                  <img class="cifrasHomeFoto" src="img/hidrologiaw.webp" alt="hidrologia">
+               </picture>
+               
+                  <h3>Hidrodinámica</h3>
+               
+               <p>Tuvo especial inquietud por estudiar y analizar la forma en la que el agua golpea con diferentes superficies</p>
+            </div>
+            <div class="cifrasHomeInterior">
+               <picture>
+                  <source type="img/webp" srcset="img/cartografiaw.webp">
+                  <source type="img/jpg" srcset="img/cartografia.jpg">
+                  <img class="cifrasHomeFoto" src="img/cartografiaw.webp" alt="Cartografía">
+               </picture>
+                  <h3>Cartografía</h3>
+               
+               <p>Además de mapas topográficos, Da Vinci se atrevió con la cartografía, haciendo mapas para César Borgia</p>
+            </div>
+         </div>
+         <!-- Artículo destacado home -->
+         <h2 class="h1-portada">Invento destacado de la semana</h2>
+         <div class="invento-portada">
+            <picture>
+               <source media="(min-width: 800px)" srcset="img/maquina-voladora.jpg">
+               <source media="(max-width: 800px)" srcset="img/maquina-voladoram.jpg">
+               <img class= "clip-portadados" src="img/maquina-voladora.jpg" alt="leonardo da vinci invento">
+            </picture>
+            <div class="contenedor-invento">
+               <h2 class="inventoHomeh2">Máquina voladora</h2>
+               <p><strong>Leonardo da Vinci</strong> (<em>Leonardo di ser Piero da Vinci</em>) (<em>Vinci, 15 de abril de 14522​-Amboise, 2 de mayo de 1519</em>)</p>
+               <br>
+               <a class="buttonhomeinteractivo" href="categorias.html">Ver más inventos</a>
+               
+            </div>
+         </div>
+         <!-- Animación SVG -->
+         <div class="animacion-padre bounceIn">
+            <img src="img/animacionsvg.svg" alt="Leonardo Animación">
+         </div>
+         <!-- Quieres saber más? -->
+         <div class="saberMas-Home">
+            <h4>¿Quieres saber más?</h4>
+            
+            <a class="buttonhomeinteractivo" href="bibliografia.html">Consultar bibliografía</a>
+            
+         </div>
+      </main>
+      <footer>
+         <div class="contenedor-nav">
+            <div class="footer-superior-padre">
+               <picture>
+                  <source type="img/webp" srcset="img/logofooterw.webp">
+                  <source type="img/png" srcset="img/logofooter.png">
+                  <img src="img/logofooterw.webp" alt="Logo Footer">
+               </picture>
+               <div class="footer-extra">
+                  <p>Descubre más en:</p>
+                  <ul class="footer-menu">
+                     <li><a href="https://es.wikipedia.org/wiki/Leonardo_da_Vinci" target="_blank" title="Infobae">Wikipedia</a></li>
+                     <li><a href="https://www.infobae.com/tendencias/2019/04/30/los-10-inventos-mas-geniales-de-leonardo-da-vinci/" target="_blank" title="Infobae">Infobae</a></li>
+                     <li><a href="https://www.muyinteresante.es/cultura/arte-cultura/especiales/todo-sobre-leonardo-da-vinci" target="_blank" title="Muy Interesante">Muy Interesante</a></li>
+                  </ul>
+               </div>
+            </div>
+            <hr>
+            <div class="footer-inferior">
+               <ul class="footer-menu">
+                  <li><a href="#" title="Terms and conditions">Política de cookies</a></li>
+                  <li><a href="#" title="Privacy policy">Política de privacidad</a></li>
+                  <li><a href="#" title="Cookies">Contacto</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

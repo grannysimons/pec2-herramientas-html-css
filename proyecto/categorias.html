@@ -8,45 +8,51 @@
       <meta name="description"
          content="Descubre los principales inventos del maestro Leonardo Da Vinci">
       <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="img/favicon.ico" type="image/x-icon">
    </head>
    <body>
       <header>
          <nav class="menu-header">
-             <div class="contenedor-nav">
-                 <a class="logo" href="portada.html" title="Logo principal">
-                     <img src="img/logo.png" alt="Logo Principal"/>
-                 </a>
-                 <ul class="menu-derecha">
-                     <li class="liheader">
-                         <a class="header-links-active" href="categorias.html">Categoría</a>
-                     </li>
-                     <li class="liheader">
-                         <a class="header-links" href="presentacion.html">Ficha</a>
-                     </li>
-                     <li class="liheader">
-                         <a class="header-links" href="detalle.html">Destacado</a>
-                     </li>
-                     <li class="liheader">
-                         <a class="header-links" href="bibliografia.html">Bibliografia</a>
-                     </li>
-                 </ul>
-             </div>
+            <div class="contenedor-nav">
+               <a class="logo" href="index.html" title="Logo principal">
+                  <picture>
+                     <source type="img/webp" srcset="img/logow.webp">
+                     <source type="img/png" srcset="img/logo.png">
+                     <img src="img/logow.webp" alt="Logo">
+                  </picture>
+               </a>
+               <ul class="menu-derecha">
+                  <li class="liheader">
+                     <a class="header-links-active" href="categorias.html">Categoría</a>
+                  </li>
+                  <li class="liheader">
+                     <a class="header-links" href="presentacion.html">Ficha</a>
+                  </li>
+                  <li class="liheader">
+                     <a class="header-links" href="detalle.html">Destacado</a>
+                  </li>
+                  <li class="liheader">
+                     <a class="header-links" href="bibliografia.html">Bibliografia</a>
+                  </li>
+               </ul>
+            </div>
          </nav>
-     </header>
+      </header>
       <main>
          <!-- Bloque inicial - Presentación -->
          <h1 class="h1-portada">Leonardo Da Vinci · Web-Homenaje</h1>
          <div class="presentacion-portada">
             <div>
                <h2 class="p-presentacion">Mini-Biografía</h2>
-               <p class="p-presentacion"><strong>Leonardo da Vinci</strong> (<i>Leonardo di ser Piero da Vinci</i>) (<i>Vinci, 15 de abril de 1452​-Amboise, 2 de mayo de 1519</i>) fue un polímata florentino del Renacimiento italiano. Fue <b>a la vez</b> pintor, anatomista, arquitecto, paleontólogo,​botánico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista. Murió acompañado de Francesco Melzi,​ a quien legó sus proyectos, diseños y pinturas. Tras pasar su infancia en su ciudad natal, Leonardo estudió con el pintor florentino <strong>Andrea de Verrocchio</strong>. Sus primeros trabajos de importancia fueron creados en Milán al servicio del duque Ludovico Sforza. Trabajó a continuación en Roma, Bolonia y Venecia, y pasó sus últimos años en Francia, por invitación del rey Francisco I.</p>
-
-               <p>Frecuentemente descrito como un arquetipo y símbolo del hombre del Renacimiento, genio universal, además de filósofo humanista cuya curiosidad infinita solo puede ser equiparable a su capacidad inventiva,​ Leonardo da Vinci es considerado uno de los más grandes pintores de todos los tiempos y, probablemente, la persona con el mayor número de talentos en múltiples disciplinas que jamás ha existido.​ Como ingeniero e inventor, Leonardo desarrolló ideas muy adelantadas a su tiempo, tales como el helicóptero, el carro de combate, el submarino y el automóvil. Muy pocos de sus proyectos llegaron a construirse (<i>entre ellos la máquina para medir el límite elástico de un cable</i>),​ puesto que la mayoría no eran realizables en esa época.​ Como científico, <strong>Leonardo da Vinci</strong> hizo descubrimientos sustanciales en las áreas de anatomía, la ingeniería civil, la óptica y la hidrodinámica, pero puesto que no publicó jamás sus hallazgos estos tuvieron escasa influencia, si es que alguna, en la ciencia posterior.
-
-            </p>
-        
+               <p class="p-presentacion"><strong>Leonardo da Vinci</strong> (<em>Leonardo di ser Piero da Vinci</em>) (<em>Vinci, 15 de abril de 1452​-Amboise, 2 de mayo de 1519</em>) fue un polímata florentino del Renacimiento italiano. Fue <strong>a la vez</strong> pintor, anatomista, arquitecto, paleontólogo,​botánico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista. Murió acompañado de Francesco Melzi,​ a quien legó sus proyectos, diseños y pinturas. Tras pasar su infancia en su ciudad natal, Leonardo estudió con el pintor florentino <strong>Andrea de Verrocchio</strong>. Sus primeros trabajos de importancia fueron creados en Milán al servicio del duque Ludovico Sforza. Trabajó a continuación en Roma, Bolonia y Venecia, y pasó sus últimos años en Francia, por invitación del rey Francisco I.</p>
+               <p>Frecuentemente descrito como un arquetipo y símbolo del hombre del Renacimiento, genio universal, además de filósofo humanista cuya curiosidad infinita solo puede ser equiparable a su capacidad inventiva,​ Leonardo da Vinci es considerado uno de los más grandes pintores de todos los tiempos y, probablemente, la persona con el mayor número de talentos en múltiples disciplinas que jamás ha existido.​ Como ingeniero e inventor, Leonardo desarrolló ideas muy adelantadas a su tiempo, tales como el helicóptero, el carro de combate, el submarino y el automóvil. Muy pocos de sus proyectos llegaron a construirse (<em>entre ellos la máquina para medir el límite elástico de un cable</em>),​ puesto que la mayoría no eran realizables en esa época.​ Como científico, <strong>Leonardo da Vinci</strong> hizo descubrimientos sustanciales en las áreas de anatomía, la ingeniería civil, la óptica y la hidrodinámica, pero puesto que no publicó jamás sus hallazgos estos tuvieron escasa influencia, si es que alguna, en la ciencia posterior.
+               </p>
             </div>
-            <img src="img/leonardo.png" alt="leonardo da vinci">
+            <!-- EJEMPLO IMG RESPONSIVE: Resolución-->
+            <img srcset="img/leonardo1x.png 1x,  
+               img/leonardo2x.png 2x" 
+               src="img/leonardo1x.png" alt="leonardo da vinci">
          </div>
          <!-- Biografía general -->
          <h1 class="h1-portada">Biografía</h1>
@@ -107,70 +113,100 @@
             </tbody>
          </table>
          <!-- Detalle de los inventos -->
-         <h2 class="cifrash2">Inventos más destacados</h2>
+         <h3 class="cifrash2">Inventos más destacados</h3>
          <div class="relacionados-padre">
             <div class="articulos-relacionados">
-               <img src="img/ornitoptero.png" alt="Ornitoptero">
+               <img srcset="img/ornitoptero.png 350w, 
+                  img/ornitopterom.png 300w" 
+                  sizes="(min-width: 800px) 400px, 
+                  (max-width: 800px) 300px" 
+                  src="img/ornitoptero.png" alt="Ornitoptero">
                <div class="contenedor-preview-articulo">
                   <a href="detalle.html" target="_blank">
-                     <h4><b>Ornitóptero</b></h4>
+                     <h4><strong>Ornitóptero</strong></h4>
                   </a>
                   <p>Inventos</p>
                </div>
             </div>
             <div class="articulos-relacionados">
-               <img src="img/cañon-giratorio.png" alt="cañon giratorio">
+               <img srcset="img/cañon-giratorio.png 350w, 
+                  img/cañon-giratoriom.png 300w" 
+                  sizes="(min-width: 800px) 350px, 
+                  (max-width: 800px) 300px" 
+                  src="img/cañon-giratorio.png" alt="Cañon Giratorio">
                <div class="contenedor-preview-articulo">
-                  <a href="">
-                     <h4><b>Cañon Giratorio</b></h4>
+                  <a href="https://inventosleonardo.webnode.com.co/analisis-de-obras/el-canon-de-3-troneras-de-da-vinci/" target="_blank">
+                     <h4><strong>Cañon Giratorio</strong></h4>
                   </a>
                   <p>Inventos</p>
                </div>
             </div>
             <div class="articulos-relacionados">
-               <img src="img/sierra-automatica.png" alt="sierra automatica">
+               <img srcset="img/sierra-automatica.png 350w, 
+                  img/sierra-automaticam.png 300w" 
+                  sizes="(min-width: 800px) 350px, 
+                  (max-width: 800px) 300px" 
+                  src="img/sierra-automatica.png" alt="Sierra automática">
                <div class="contenedor-preview-articulo">
-                  <a href="">
-                     <h4><b>Sierra Automática</b></h4>
+                  <a href="https://historia.nationalgeographic.com.es/a/fabulosos-inventos-leonardo-da-vinci_16634" target="_blank">
+                     <h4><strong>Sierra Automática</strong></h4>
                   </a>
                   <p>Inventos</p>
                </div>
             </div>
             <div class="articulos-relacionados">
-               <img src="img/tornillo-aereo.png" alt="tornillo aereo">
+               <img srcset="img/tornillo-aereo.png 350w, 
+                  img/tornillo-aereom.png 300w" 
+                  sizes="(min-width: 800px) 350px, 
+                  (max-width: 800px) 300px" 
+                  src="img/tornillo-aereo.png" alt="Tornillo Aéreo">
                <div class="contenedor-preview-articulo">
-                  <a href="">
-                     <h4><b>Tornillo Aéreo</b></h4>
+                  <a href="https://hmong.es/wiki/Leonardo%27s_aerial_screw" target="_blank">
+                     <h4><strong>Tornillo Aéreo</strong></h4>
                   </a>
                   <p>Inventos</p>
                </div>
+            </div>
+         </div>
+         <!-- PREVIEW Ortitóptero -->
+         <div class="ficha-padre-link">
+            <div class="ficha-invento-link">
+               <h2>Ornitóptero</h2>
+               <picture>
+                  <source media="(min-width: 800px)" srcset="img/ornitoptero-ficha.jpg">
+                  <source media="(max-width: 800px)" srcset="img/ornitoptero-ficha-art.jpg">
+                  <img src="img/ornitoptero-ficha.jpg" alt="Onitóptero">
+               </picture>
+               <a class="buttonficha" href="detalle.html" target="_blank">Ir al invento</a>
             </div>
          </div>
       </main>
       <footer>
-        
          <div class="contenedor-nav">
-             <div class="footer-superior-padre">
-                 <p>Leonardo Da Vinci</p>
-                 <div class="footer-extra">
-                     <p>Descubre más en:</p>
-     
-                     <ul class="footer-menu">
-                         <li><a href="https://es.wikipedia.org/wiki/Leonardo_da_Vinci"target="_blank" title="Infobae">Wikipedia</a></li>
-                         <li><a href="https://www.infobae.com/tendencias/2019/04/30/los-10-inventos-mas-geniales-de-leonardo-da-vinci/" target="_blank" title="Infobae">Infobae</a></li>
-                         <li><a href="https://www.muyinteresante.es/cultura/arte-cultura/especiales/todo-sobre-leonardo-da-vinci" target="_blank" title="Muy Interesante">Muy Interesante</a></li>
-                     </ul>
-                 </div>
-             </div>
-             <hr>
-             <div class="footer-inferior">
-                 <ul class="footer-menu">
-                     <li><a href="#" title="Terms and conditions">Política de cookies</a></li>
-                     <li><a href="#" title="Privacy policy">Política de privacidad</a></li>
-                     <li><a href="#" title="Cookies">Contacto</a></li>
-                 </ul>
-             </div>
+            <div class="footer-superior-padre">
+               <picture>
+                  <source type="img/webp" srcset="img/logofooterw.webp">
+                  <source type="img/png" srcset="img/logofooter.png">
+                  <img src="img/logofooterw.webp" alt="Logo Footer">
+               </picture>
+               <div class="footer-extra">
+                  <p>Descubre más en:</p>
+                  <ul class="footer-menu">
+                     <li><a href="https://es.wikipedia.org/wiki/Leonardo_da_Vinci" target="_blank" title="Infobae">Wikipedia</a></li>
+                     <li><a href="https://www.infobae.com/tendencias/2019/04/30/los-10-inventos-mas-geniales-de-leonardo-da-vinci/" target="_blank" title="Infobae">Infobae</a></li>
+                     <li><a href="https://www.muyinteresante.es/cultura/arte-cultura/especiales/todo-sobre-leonardo-da-vinci" target="_blank" title="Muy Interesante">Muy Interesante</a></li>
+                  </ul>
+               </div>
+            </div>
+            <hr>
+            <div class="footer-inferior">
+               <ul class="footer-menu">
+                  <li><a href="#" title="Terms and conditions">Política de cookies</a></li>
+                  <li><a href="#" title="Privacy policy">Política de privacidad</a></li>
+                  <li><a href="#" title="Cookies">Contacto</a></li>
+               </ul>
+            </div>
          </div>
-     </footer>
+      </footer>
    </body>
 </html>
